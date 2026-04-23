@@ -24,7 +24,7 @@ export default function Contact() {
           question or just want to say hi, my inbox is always open.
         </p>
         <a
-          href="mailto:your@email.com"
+          href="mailto:crothleder@gmail.com"
           className="inline-block px-8 py-4 border border-blue-400 text-blue-400 rounded font-mono text-sm hover:bg-blue-400/10 transition-colors duration-200"
         >
           Say Hello

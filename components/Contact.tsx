@@ -32,7 +32,7 @@ export default function Contact() {
 
         <div className="flex justify-center gap-6 mt-16">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/crothleder-123"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-white transition-colors duration-200 text-sm font-mono"
@@ -40,7 +40,7 @@ export default function Contact() {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/camden-rothleder"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-white transition-colors duration-200 text-sm font-mono"

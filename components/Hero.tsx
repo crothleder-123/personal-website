@@ -27,7 +27,7 @@ export default function Hero() {
         transition={{ delay: 0.5 }}
         className="text-4xl sm:text-6xl font-bold text-gray-500 mb-6"
       >
-        I build what I'd want to use.
+        I build what I&apos;d want to use.
       </motion.h2>
       <motion.p
         initial={{ opacity: 0, y: 20 }}

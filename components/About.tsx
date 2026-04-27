@@ -6,8 +6,8 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const skills = [
-  "JavaScript", "TypeScript", "Python", "React", "Node.js", "SQL",
-  "Git", "AWS", "Docker", "REST APIs",
+  "C/C++", "Python", "Java", "React", "Node.js",
+  "Git", "Docker", "Kubernetes", "REST APIs", "Agentic Development"
 ];
 
 export default function About() {

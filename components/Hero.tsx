@@ -9,7 +9,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
-        className="text-blue-400 font-mono mb-4"
+        className="text-olive font-mono mb-4"
       >
         Hi, my name is
       </motion.p>
@@ -17,7 +17,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.35 }}
-        className="text-5xl sm:text-7xl font-bold text-white mb-2"
+        className="text-5xl sm:text-7xl font-bold text-ink mb-2"
       >
         Camden Rothleder.
       </motion.h1>
@@ -25,15 +25,15 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
-        className="text-4xl sm:text-6xl font-bold text-gray-500 mb-6"
+        className="text-4xl sm:text-6xl font-bold text-muted mb-6"
       >
-        I build what I&apos;d want to use.
+        Looking to solve real problems for real people.
       </motion.h2>
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.65 }}
-        className="text-gray-400 max-w-xl text-lg leading-relaxed mb-10"
+        className="text-muted max-w-xl text-lg leading-relaxed mb-10"
       >
         I&apos;m a software engineer with 3 years of professional experience
         building reliable, scalable software. Currently looking for my next
@@ -47,13 +47,13 @@ export default function Hero() {
       >
         <a
           href="#contact"
-          className="px-6 py-3 border border-blue-400 text-blue-400 rounded font-mono text-sm hover:bg-blue-400/10 transition-colors duration-200"
+          className="px-6 py-3 bg-terracotta text-cream rounded font-mono text-sm hover:bg-terracotta/90 transition-colors duration-200"
         >
           Get in touch
         </a>
         <a
           href="#experience"
-          className="px-6 py-3 text-gray-400 font-mono text-sm hover:text-white transition-colors duration-200"
+          className="px-6 py-3 border border-terracotta text-terracotta rounded font-mono text-sm hover:bg-terracotta/10 transition-colors duration-200"
         >
           See my work →
         </a>

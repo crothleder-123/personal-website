@@ -21,14 +21,14 @@ export default function About() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="flex items-center gap-4 text-2xl font-bold text-white mb-12">
-          <span className="text-blue-400 font-mono text-xl">01.</span>
+        <h2 className="flex items-center gap-4 text-2xl font-bold text-ink mb-12">
+          <span className="text-olive font-mono text-xl">01.</span>
           About Me
-          <span className="flex-1 h-px bg-white/10 ml-4" />
+          <span className="flex-1 h-px bg-ink/10 ml-4" />
         </h2>
 
         <div className="grid md:grid-cols-[1fr_380px] gap-12 items-start">
-          <div className="space-y-4 text-gray-400 leading-relaxed">
+          <div className="space-y-4 text-muted leading-relaxed">
             <p>
               I&apos;m a software engineer with 3 years of professional experience
               building and shipping production software. I care about writing
@@ -47,14 +47,13 @@ export default function About() {
             </p>
 
             <div className="pt-6">
-              <p className="text-gray-400 mb-4 text-sm font-mono">Technologies I work with:</p>
-              <ul className="grid grid-cols-2 gap-2 max-w-md">
+              <p className="text-muted mb-4 text-sm font-mono">Technologies I work with:</p>
+              <ul className="flex flex-wrap gap-2 max-w-md">
                 {skills.map((skill) => (
                   <li
                     key={skill}
-                    className="flex items-center gap-2 text-gray-400 text-sm"
+                    className="bg-olive text-cream px-3 py-1 rounded-full text-sm font-medium"
                   >
-                    <span className="text-blue-400">▹</span>
                     {skill}
                   </li>
                 ))}

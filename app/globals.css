@@ -2,33 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
 ::selection {
-  background: #3b82f6;
-  color: #fff;
+  @apply bg-olive text-cream;
 }
 
 ::-webkit-scrollbar {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  @apply bg-cream;
 }
 ::-webkit-scrollbar-thumb {
-  background: #3b82f6;
-  border-radius: 3px;
+  @apply bg-olive rounded;
 }

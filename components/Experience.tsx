@@ -54,23 +54,23 @@ export default function Experience() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="flex items-center gap-4 text-2xl font-bold text-white mb-12">
-          <span className="text-blue-400 font-mono text-xl">02.</span>
+        <h2 className="flex items-center gap-4 text-2xl font-bold text-ink mb-12">
+          <span className="text-olive font-mono text-xl">02.</span>
           Work Experience
-          <span className="flex-1 h-px bg-white/10 ml-4" />
+          <span className="flex-1 h-px bg-ink/10 ml-4" />
         </h2>
 
         <div className="flex flex-col md:flex-row gap-8">
           {/* Tab list */}
-          <div className="flex md:flex-col overflow-x-auto md:overflow-visible min-w-[160px] border-b md:border-b-0 md:border-l border-white/10">
+          <div className="flex md:flex-col overflow-x-auto md:overflow-visible min-w-[160px] border-b md:border-b-0 md:border-l border-ink/10">
             {jobs.map((job, i) => (
               <button
                 key={job.company}
                 onClick={() => setActive(i)}
                 className={`px-4 py-3 text-sm font-mono text-left whitespace-nowrap transition-colors duration-200 border-b-2 md:border-b-0 md:border-l-2 -mb-px md:mb-0 md:-ml-px ${
                   active === i
-                    ? "text-blue-400 border-blue-400 bg-blue-400/5"
-                    : "text-gray-500 border-transparent hover:text-gray-300 hover:bg-white/5"
+                    ? "text-olive border-olive bg-olive/5"
+                    : "text-muted border-transparent hover:text-ink hover:bg-ink/5"
                 }`}
               >
                 {job.company}
@@ -80,17 +80,17 @@ export default function Experience() {
 
           {/* Tab content */}
           <div className="flex-1 min-h-[200px]">
-            <h3 className="text-white font-semibold text-lg">
+            <h3 className="text-ink font-semibold text-lg">
               {jobs[active].title}{" "}
-              <span className="text-blue-400">@ {jobs[active].company}</span>
+              <span className="text-olive">@ {jobs[active].company}</span>
             </h3>
-            <p className="text-gray-500 font-mono text-sm mt-1 mb-6">
+            <p className="text-muted font-mono text-sm mt-1 mb-6">
               {jobs[active].range}
             </p>
             <ul className="space-y-3">
               {jobs[active].bullets.map((b, i) => (
-                <li key={i} className="flex gap-3 text-gray-400 text-sm leading-relaxed">
-                  <span className="text-blue-400 mt-1 shrink-0">▹</span>
+                <li key={i} className="flex gap-3 text-muted text-sm leading-relaxed">
+                  <span className="text-olive mt-1 shrink-0">▹</span>
                   {b}
                 </li>
               ))}

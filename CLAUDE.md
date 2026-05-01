@@ -15,7 +15,7 @@ Two things stay true through that evolution:
 
 Think: the front of the site is a clean professional landing; the deeper you go, the more personality and craft show through. New features can lean into the playful side as long as the top of the page still does its job.
 
-Stack: Next.js (App Router), React, TypeScript, Tailwind. Single-page with anchor navigation (`#about`, `#experience`, `#projects`, `#contact`) – though new sections may be added as the site grows. Aesthetic is dark-mode, minimalist, Brittany-Chiang-inspired.
+Stack: Next.js (App Router), React, TypeScript, Tailwind. Single-page with anchor navigation (`#about`, `#experience`, `#projects`, `#contact`) – though new sections may be added as the site grows. Aesthetic is light-mode (warm cream palette), minimalist, Brittany-Chiang-inspired.
 
 Deployment: production at https://camdenrothleder.dev/. Treat `main` as deployable.
 
@@ -49,7 +49,21 @@ Deployment: production at https://camdenrothleder.dev/. Treat `main` as deployab
 
 **Components:** functional components only. Co-locate component-specific types. Keep components under ~150 lines – split when they grow past that.
 
-**Styling:** Tailwind utility classes. Match the existing dark palette and spacing rhythm. Don't introduce arbitrary one-off colors – extend the Tailwind config if a new token is genuinely needed.
+**Styling:** Tailwind utility classes. Match the existing light-mode palette and spacing rhythm. Don't introduce arbitrary one-off colors – use the tokens defined below.
+
+**Color system:** The site uses a warm, earthy light-mode palette. Depth is created through subtle warm-on-warm layering, not high contrast. When styling, **always use the Tailwind color tokens** defined in `tailwind.config.ts` — never reach for arbitrary hex values.
+
+| Token | Hex | Purpose | Notes |
+| --- | --- | --- | --- |
+| `cream` | `#F0E9D6` | Page background | The base neutral. Warm and inviting. |
+| `surface` | `#E8DFC7` | Elevated surfaces, cards, overlays | Subtly darker than cream for depth. Stays in the warm family. |
+| `ink` | `#2A2419` | Primary text, headings | Warm-leaning dark brown, not pure black. Avoids harsh/cold appearance on cream. |
+| `muted` | `#6E6650` | Secondary text, metadata, borders | Desaturated brown. Use for body copy, dates, tech tags, disabled states. |
+| `warm` | `#D8CFB6` | (Reserved for future use) | Light warm accent if needed. |
+| `olive` | `#5A6B3A` | Secondary accent, icon bullets | Saturated green. Used for section numbers, skill bullets, hover accents. |
+| `terracotta` | `#B05530` | Primary CTA buttons | Deepened for WCAG AA contrast on cream (4.6:1). Used for outline buttons and prominent interactive elements. |
+
+**Design philosophy:** The palette works because each color stays in the earth-tone family. Pure black on cream would feel harsh and cold; the warm brown text feels intentional. Surface colors need to be subtle—deeper than cream but not enough to read as "dirty." Terracotta is the only saturated accent and draws the eye to primary actions.
 
 **Accessibility is not optional.** Semantic HTML (`<nav>`, `<section>`, `<main>`, proper heading hierarchy). All interactive elements keyboard-reachable with visible focus states. Images need meaningful `alt` text. Color contrast must pass WCAG AA. A recruiter using a screen reader should have a clean experience.
 

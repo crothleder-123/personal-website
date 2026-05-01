@@ -25,11 +25,11 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#0a0a0a]/90 backdrop-blur border-b border-white/5" : ""
+        scrolled ? "bg-cream/90 backdrop-blur border-b border-ink/5" : ""
       }`}
     >
       <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-        <span className="text-blue-400 font-mono font-semibold tracking-tight">
+        <span className="text-olive font-mono font-semibold tracking-tight">
           CR
         </span>
         <ul className="flex gap-8">
@@ -37,7 +37,7 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-gray-400 hover:text-white transition-colors duration-200"
+                className="text-sm text-muted hover:text-ink transition-colors duration-200"
               >
                 {link.label}
               </a>

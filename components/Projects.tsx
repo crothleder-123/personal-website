@@ -34,23 +34,23 @@ export default function Projects() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="flex items-center gap-4 text-2xl font-bold text-white mb-12">
-          <span className="text-blue-400 font-mono text-xl">03.</span>
+        <h2 className="flex items-center gap-4 text-2xl font-bold text-ink mb-12">
+          <span className="text-olive font-mono text-xl">03.</span>
           Projects
-          <span className="flex-1 h-px bg-white/10 ml-4" />
+          <span className="flex-1 h-px bg-ink/10 ml-4" />
         </h2>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <article
               key={project.title}
-              className="flex flex-col rounded-lg border border-white/10 bg-white/[0.02] p-6 hover:border-blue-400/40 hover:bg-white/[0.04] transition-colors duration-200"
+              className="flex flex-col rounded-lg border border-muted/20 bg-surface p-6 hover:border-terracotta/40 transition-colors duration-200"
             >
               <div className="flex items-start justify-between mb-4">
-                <span className="text-blue-400 text-2xl">▹</span>
+                <span className="text-olive text-2xl">▹</span>
                 <div className="flex items-center gap-3">
                   {project.status && (
-                    <span className="text-xs font-mono text-gray-500 border border-white/10 rounded px-2 py-0.5">
+                    <span className="text-xs font-mono text-muted border border-muted rounded px-2 py-0.5">
                       {project.status}
                     </span>
                   )}
@@ -59,7 +59,7 @@ export default function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-500 hover:text-blue-400 transition-colors duration-200 text-sm font-mono"
+                      className="text-muted hover:text-olive transition-colors duration-200 text-sm font-mono"
                       aria-label={`${project.title} on GitHub`}
                     >
                       GitHub
@@ -70,7 +70,7 @@ export default function Projects() {
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-500 hover:text-blue-400 transition-colors duration-200 text-sm font-mono"
+                      className="text-muted hover:text-olive transition-colors duration-200 text-sm font-mono"
                       aria-label={`${project.title} live demo`}
                     >
                       Demo
@@ -79,14 +79,14 @@ export default function Projects() {
                 </div>
               </div>
 
-              <h3 className="text-white font-semibold text-lg mb-2">
+              <h3 className="text-ink font-semibold text-lg mb-2">
                 {project.title}
               </h3>
-              <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-1">
+              <p className="text-muted text-sm leading-relaxed mb-6 flex-1">
                 {project.description}
               </p>
 
-              <ul className="flex flex-wrap gap-x-4 gap-y-1 text-xs font-mono text-gray-500">
+              <ul className="flex flex-wrap gap-x-4 gap-y-1 text-xs font-mono text-muted">
                 {project.tech.map((t) => (
                   <li key={t}>{t}</li>
                 ))}

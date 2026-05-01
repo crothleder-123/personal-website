@@ -14,7 +14,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <Contact />
-      <footer className="text-center py-6 text-gray-600 text-xs font-mono">
+      <footer className="text-center py-6 text-muted text-xs font-mono">
         Built by Camden Rothleder
       </footer>
     </main>
